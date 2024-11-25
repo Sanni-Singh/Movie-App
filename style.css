@@ -35,6 +35,7 @@ body{
                 input{
                     padding: 5px 10px;
                     border: none;
+                    outline: none;
                 }
             }
         }
@@ -83,62 +84,37 @@ body{
             }
         }
 
-        .section-1{
-            width: 100%;
+        section{
+            width: 90%;
             display: flex;
-            flex-direction: column;
-            gap: 1rem;
+            margin:  0 auto;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.7rem;
 
-            .section-1-head{
-                width: 100%;
-                border: 2px solid red;
-                padding: 0 40px;
+            .card{
+                width: 250px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: #333;
+                align-items: center;
 
+                img{
+                    width: 100%;
+                    height: 80%;
+                }
+                h2{
+                    font-size: 1.5rem;
+                    color: #fff;
+
+                }
                 p{
                     font-size: 1.5rem;
                     color: #fff;
-                }
-            }
-            .section-1-movie{
-                width:100%;
-                margin: 0 auto;
-                border: 2px solid red;
-                display: flex;
-                gap: 2rem;
-                justify-content: center;
-                align-items: center;
-                .nextArrow , .beforeArrow{
-                    font-size: 1.1rem;
-                    padding: 4px 5px;
-                    border-radius: 50%;
-                    font-weight: 900;
-                    background-color: #fff;
-                    cursor: pointer;
-                }
-
-                .movie{
-                    width: 250px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 10px;
-                    color: #fff;
-                    background-color: #908f8f;
-                    
-                    img{
-                        width: 100%;
-                        height: 300px;
-                    }
-                    button{
-                        padding: 5px 20px;
-                        border: none;
-                        border-radius: 10px;
-                        background-color: orangered;
-                        color: #fff;
-                        font-weight: 700;
-                        cursor: pointer;
-                    }
+                    font-weight: 10;
                 }
             }
         }
